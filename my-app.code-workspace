@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "🎨 Frontend",
+			"path": "resources"
+		},
+		{
+			"name": "⚙️ Backend",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/resources": true,
+			"**/vendor": true,
+			"**/node_modules": true
+		}
+	}
+}
