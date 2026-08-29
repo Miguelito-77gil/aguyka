@@ -1,12 +1,11 @@
-# For more information: https://laravel.com/docs/sail
 services:
     laravel.test:
         build:
-	    context: ./vendor/laravel/sail/runtimes/8.3
+            context: ./vendor/laravel/sail/runtimes/8.5
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
-        image: sail-8.3/app
+        image: sail-8.5/app
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         ports:
@@ -22,6 +21,7 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
+        depends_on: {}
 networks:
     sail:
         driver: bridge
